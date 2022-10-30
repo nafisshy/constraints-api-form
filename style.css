@@ -3,7 +3,7 @@
     border:none;
     border-radius: .15rem;
     padding: .75rem;
-    color:black;
+    color: whitesmoke;
 }
 
 .dropdown{
@@ -21,8 +21,8 @@
     box-shadow: 0 10px 10px 0 rgba(0,0,0,.2);
     opacity: 0;
     transform: translateY(-20px);
-    transition: opacity 250ms ease-in-out;
-    transition: transform 250ms ease-in-out;
+    transition: opacity 360ms ease-in-out;
+    transition: transform 360ms ease-in-out;
     pointer-events: none;
 }
 
@@ -31,3 +31,54 @@
     transform: translateY(0);
     pointer-events: auto;
 }
+
+.field{
+    border-radius: .25rem;
+}
+
+.field *{
+    display: block;
+}
+
+.submitBtn{
+    margin: .75rem;
+}
+
+.error {
+    width: 100%;
+    padding: 0;
+    font-size: 80%;
+    color: white;
+    background-color: #900;
+    border-radius: 0 0 5px 5px;
+  
+    box-sizing: border-box;
+}
+
+.error.active {
+    padding: 0.3em;
+}
+
+input{
+    appearance: none;
+  
+    width: 100%;
+    border: 1px solid #333;
+    border-radius: .25rem;
+    margin: 0;
+  
+    font-family: inherit;
+    font-size: 90%;
+  
+    box-sizing: border-box;
+  }
+  
+  /* This is our style for the invalid fields */
+  input:invalid {
+    border-color: #900;
+    background-color: #fdd;
+  }
+  
+  input:focus:invalid {
+    outline: none;
+  }
