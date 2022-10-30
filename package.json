@@ -1,0 +1,29 @@
+{
+  "name": "constraints-api-form-validation",
+  "version": "1.0.0",
+  "description": "A form using constraints api and custom css to validate itself on clientside.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nafisshy/constraints-api-form.git"
+  },
+  "author": "Nafisa Sardar nafisshy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nafisshy/constraints-api-form/issues"
+  },
+  "homepage": "https://github.com/nafisshy/constraints-api-form#readme",
+  "devDependencies": {
+    "css-loader": "^6.7.1",
+    "eslint": "^8.26.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "prettier": "2.7.1",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  }
+}

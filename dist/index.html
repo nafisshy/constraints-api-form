@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forn Validation Example</title>
     <link rel="stylesheet" href="style.css"/>
-    <script src="script.js" defer></script>
+    <script src="bundle.js" defer></script>
 </head>
 <body>
     <div class="dropdown">
@@ -39,14 +39,14 @@
             <fieldset class="field">
                 <label for="pass">
                   <span>Please enter the password:</span>
-                  <input type="text" id="pass" name="pass" required minlength="8" maxlength="20" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[@#$%!&_+=()]).*$" />
+                  <input type="password" id="pass" name="pass" required minlength="8" maxlength="20" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[@#$%!&_+=()]).*$" />
                   <span class="error" aria-live="polite"></span>
                 </label>
             </fieldset>
             <fieldset class="field">
                 <label for="passcon">
                   <span>Confirm the password:</span>
-                  <input type="text" id="passcon" name="passcon" required maxlength="16"/>
+                  <input type="password" id="passcon" name="passcon" required maxlength="16"/>
                   <span class="error" aria-live="polite"></span>
                 </label>
             </fieldset>
