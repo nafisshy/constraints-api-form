@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forn Validation Example</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="bundle.js" defer></script>
+</head>
+<body>
+    <div class="dropdown">
+        <button id="open">Open Form</button>
+    </div>
+    <div class="dropdown-menu">
+        <form action="" novalidate>
+            <fieldset class="field">
+                <label for="mail">
+                  <span>Please enter your email address:</span>
+                  <input type="email" id="mail" name="mail" required minlength="8" />
+                  <span class="error" aria-live="polite"></span>
+                </label>
+            </fieldset>
+
+            <fieldset class="field">
+                <label for="country">
+                  <span>Please enter the name of your country:</span>
+                  <input type="text" id="country" name="country" required pattern="^[a-zA-Z]+$"/>
+                  <span class="error" aria-live="polite"></span>
+                </label>
+            </fieldset>
+            <fieldset class="field">
+                <label for="pin">
+                  <span>Please enter your PIN code:</span>
+                  <input type="text" id="pin" name="pin" required minlength="6" maxlength="6" pattern="^[0-9]*$"/>
+                  <span class="error" aria-live="polite"></span>
+                </label>
+            </fieldset>
+            <fieldset class="field">
+                <label for="pass">
+                  <span>Please enter the password:</span>
+                  <input type="password" id="pass" name="pass" required minlength="8" maxlength="20" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[@#$%!&_+=()]).*$" />
+                  <span class="error" aria-live="polite"></span>
+                </label>
+            </fieldset>
+            <fieldset class="field">
+                <label for="passcon">
+                  <span>Confirm the password:</span>
+                  <input type="password" id="passcon" name="passcon" required maxlength="16"/>
+                  <span class="error" aria-live="polite"></span>
+                </label>
+            </fieldset>
+              <button class="submitBtn">Submit</button>
+        </form>                
+    </div>  
+</body>
+</html>
